@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "masterengineer:block/small_dust_bricks",
+    "side": "masterengineer:block/small_dust_bricks",
+    "top": "masterengineer:block/small_dust_bricks"
+  }
+}

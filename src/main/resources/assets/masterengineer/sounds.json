@@ -1,0 +1,11 @@
+{
+  "item.resonance_fork.use": {
+    "sounds": [
+      { "name": "masterengineer:item/resonance"},
+      { "name": "masterengineer:item/resonance", "pitch": 0.8},
+      { "name": "masterengineer:item/resonance", "pitch": 0.9},
+      { "name": "masterengineer:item/resonance", "pitch": 1.1}
+    ],
+    "subtitle": "subtitles.masterengineer.item.resonance_fork.use"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "masterengineer:small_dust_bricks"
+  },
+  "result": "masterengineer:chiseled_dust_bricks"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "masterengineer:block/small_dust_brick_slab"
+    },
+    "type=double": {
+      "model": "masterengineer:block/small_dust_bricks"
+    },
+    "type=top": {
+      "model": "masterengineer:block/small_dust_brick_slab_top"
+    }
+  }
+}

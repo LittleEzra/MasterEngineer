@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "masterengineer:block/chiseled_dust_bricks_top",
+    "side": "masterengineer:block/chiseled_dust_bricks"
+  }
+}

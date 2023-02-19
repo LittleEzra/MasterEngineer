@@ -1,0 +1,39 @@
+{
+  "block.masterengineer.wooden_frame": "Wooden Frame",
+  "block.masterengineer.white_frame": "White Frame",
+  "block.masterengineer.orange_frame": "Orange Frame",
+  "block.masterengineer.magenta_frame": "Magenta Frame",
+  "block.masterengineer.light_blue_frame": "Light Blue Frame",
+  "block.masterengineer.yellow_frame": "Yellow Frame",
+  "block.masterengineer.lime_frame": "Lime Frame",
+  "block.masterengineer.pink_frame": "Pink Frame",
+  "block.masterengineer.gray_frame": "Gray Frame",
+  "block.masterengineer.light_gray_frame": "Light Gray Frame",
+  "block.masterengineer.cyan_frame": "Cyan Frame",
+  "block.masterengineer.purple_frame": "Purple Frame",
+  "block.masterengineer.blue_frame": "Blue Frame",
+  "block.masterengineer.brown_frame": "Brown Frame",
+  "block.masterengineer.green_frame": "Green Frame",
+  "block.masterengineer.red_frame": "Red Frame",
+  "block.masterengineer.black_frame": "Black Frame",
+
+  "block.masterengineer.chiseled_dust_bricks": "Chiseled Dust Bricks",
+
+  "block.masterengineer.dust_bricks": "Dust Bricks",
+  "block.masterengineer.dust_brick_stairs": "Dust Brick Stairs",
+  "block.masterengineer.dust_brick_slab": "Dust Brick Slab",
+  "block.masterengineer.dust_brick_wall": "Dust Brick Wall",
+
+  "block.masterengineer.small_dust_bricks": "Small Dust Bricks",
+  "block.masterengineer.small_dust_brick_stairs": "Small Dust Brick Stairs",
+  "block.masterengineer.small_dust_brick_slab": "Small Dust Brick Slab",
+  "block.masterengineer.small_dust_brick_wall": "Small Dust Brick Wall",
+  "block.masterengineer.dust": "Dust",
+  "block.masterengineer.dust_block": "Dust Block",
+
+  "item.masterengineer.resonance_fork": "Resonance Fork",
+  "item.masterengineer.feather_duster": "Feather Duster",
+  "item.masterengineer.mark_arrow": "Mark Arrow",
+
+  "subtitles.masterengineer.item.resonance_fork.use": "Resonance Fork Resonates"
+}

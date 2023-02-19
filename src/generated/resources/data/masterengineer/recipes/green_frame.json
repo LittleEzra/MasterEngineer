@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "building_frame",
+  "key": {
+    "D": {
+      "item": "minecraft:green_dye"
+    },
+    "F": {
+      "item": "masterengineer:wooden_frame"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FDF",
+    "FFF"
+  ],
+  "result": {
+    "count": 8,
+    "item": "masterengineer:green_frame"
+  }
+}

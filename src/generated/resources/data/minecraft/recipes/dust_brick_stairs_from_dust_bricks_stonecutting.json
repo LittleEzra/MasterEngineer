@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "masterengineer:dust_bricks"
+  },
+  "result": "masterengineer:dust_brick_stairs"
+}

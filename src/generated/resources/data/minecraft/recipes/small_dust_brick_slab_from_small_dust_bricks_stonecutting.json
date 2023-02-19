@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "masterengineer:small_dust_bricks"
+  },
+  "result": "masterengineer:small_dust_brick_slab"
+}

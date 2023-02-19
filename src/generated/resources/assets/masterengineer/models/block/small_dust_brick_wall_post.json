@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_post",
+  "textures": {
+    "wall": "masterengineer:block/small_dust_bricks"
+  }
+}

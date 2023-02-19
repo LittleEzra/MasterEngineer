@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=1": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=2": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=3": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=4": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=5": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=6": { "model": "masterengineer:block/chiseled_dust_bricks" },
+    "age=7": { "model": "masterengineer:block/chiseled_dust_bricks" }
+  }
+}
