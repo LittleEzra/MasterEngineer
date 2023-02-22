@@ -19,7 +19,7 @@ public class MarkHandlerProvider implements ICapabilityProvider, INBTSerializabl
     private MarkHandler markHandler = null;
     private final LazyOptional<MarkHandler> optional = LazyOptional.of(this::createMarkHandler);
 
-    private MarkHandler createMarkHandler() {
+    private @NotNull MarkHandler createMarkHandler() {
         if (this.markHandler == null){
             this.markHandler = new MarkHandler();
         }

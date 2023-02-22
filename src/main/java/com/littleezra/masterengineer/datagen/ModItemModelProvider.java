@@ -53,6 +53,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         handheldItem(ModItems.RESONANCE_FORK.get());
         handheldItem(ModItems.FEATHER_DUSTER.get());
+
+        blockItem(ModBlocks.ALLOCITE_BLOCK.get());
+        basicItem(ModItems.ALLOCITE_CRYSTAL.get());
     }
 
     public String blockName(Block block){

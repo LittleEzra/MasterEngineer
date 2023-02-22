@@ -1,11 +1,9 @@
 package com.littleezra.masterengineer.blocks;
 
 import com.littleezra.masterengineer.MasterEngineer;
-import com.littleezra.masterengineer.blocks.custom.DustBlock;
-import com.littleezra.masterengineer.blocks.custom.DustBrickBlock;
-import com.littleezra.masterengineer.blocks.custom.DustLayerBlock;
-import com.littleezra.masterengineer.blocks.custom.FrameBlock;
+import com.littleezra.masterengineer.blocks.custom.*;
 import com.littleezra.masterengineer.items.ModItems;
+import com.littleezra.masterengineer.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -90,6 +88,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> DUST_BLOCK = registerBlock("dust_block",
             () -> new DustBlock(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(0.4F, 0F).speedFactor(0.4F)
                     .isValidSpawn(ModBlocks::always).isRedstoneConductor(ModBlocks::always).isViewBlocking(ModBlocks::always).isSuffocating(ModBlocks::always)));
+
+    public static final RegistryObject<Block> ALLOCITE_BLOCK = registerBlock("allocite_block",
+            () -> new AllociteBlock(BlockBehaviour.Properties.of(Material.AMETHYST).sound(ModSounds.ALLOCITE).noOcclusion().lightLevel(state -> 5).strength(1.5F, 400F).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> ALLOCITE_PLATING = registerBlock("allocite_plating",
+            () -> new AllociteBlock(BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.GLASS).noOcclusion().strength(1.7F, 400F).requiresCorrectToolForDrops()));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

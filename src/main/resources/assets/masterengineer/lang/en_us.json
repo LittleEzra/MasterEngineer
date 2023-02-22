@@ -31,6 +31,11 @@
   "block.masterengineer.dust": "Dust",
   "block.masterengineer.dust_block": "Dust Block",
 
+  "block.masterengineer.allocite_block": "Allocite Block",
+  "block.masterengineer.allocite_plating": "Allocite Plating",
+
+  "item.masterengineer.allocite_crystal": "Allocite Crystal",
+
   "item.masterengineer.resonance_fork": "Resonance Fork",
   "item.masterengineer.feather_duster": "Feather Duster",
   "item.masterengineer.mark_arrow": "Mark Arrow",

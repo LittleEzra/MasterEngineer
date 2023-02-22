@@ -8,7 +8,7 @@ public class MarkHandler {
     private int tickDuration;
 
     public Vector3f getColor() {
-        return color;
+        return this.color;
     }
 
     public void setColor(Vector3f color) {
@@ -24,16 +24,16 @@ public class MarkHandler {
     }
 
     public void copyFrom(MarkHandler source){
-        this.color = source.color;
-        this.tickDuration = source.tickDuration;
+        this.setColor(source.getColor());
+        this.setTickDuration(source.getTickDuration());
     }
 
     public void saveNBTData(CompoundTag nbt){
-        nbt.putInt("duration", this.tickDuration);
+        nbt.putInt("duration", this.getTickDuration());
 
-        nbt.putFloat("markRed", this.color.x);
-        nbt.putFloat("markGreen", this.color.y);
-        nbt.putFloat("markBlue", this.color.z);
+        nbt.putFloat("markRed", this.getColor().x);
+        nbt.putFloat("markGreen", this.getColor().y);
+        nbt.putFloat("markBlue", this.getColor().z);
     }
 
     public void loadNBTData(CompoundTag nbt){

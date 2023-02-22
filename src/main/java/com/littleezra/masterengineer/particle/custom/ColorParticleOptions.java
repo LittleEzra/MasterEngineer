@@ -73,7 +73,7 @@ public class ColorParticleOptions implements ParticleOptions{
     }
 
     public String writeToString() {
-        return String.format(Locale.ROOT, "%s %.2f %.2f %.2f", ForgeRegistries.PARTICLE_TYPES.getKey(this.getType()), this.color.x(), this.color.y(), this.color.z());
+        return String.format(Locale.ROOT, "%s %.2f %.2f %.2f", ForgeRegistries.PARTICLE_TYPES.getKey(this.getType()), this.getColor().x, this.getColor().y, this.getColor().z);
     }
 
     public Vector3f getColor() {

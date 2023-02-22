@@ -32,6 +32,7 @@ import org.slf4j.Logger;
 
 import javax.annotation.Nullable;
 import java.awt.*;
+import java.util.Vector;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MasterEngineer.MOD_ID)
@@ -92,6 +93,11 @@ public class MasterEngineer
 
     public static int getIntColor(String hex){
         Color col = Color.decode(hex);
+        return getIntFromRGB(col.getRed(), col.getGreen(), col.getBlue());
+    }
+
+    public static int getIntColor(Vector3f vector3f){
+        Color col = new Color(vector3f.x, vector3f.y, vector3f.z);
         return getIntFromRGB(col.getRed(), col.getGreen(), col.getBlue());
     }
 

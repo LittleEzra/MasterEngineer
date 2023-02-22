@@ -7,5 +7,117 @@
       { "name": "masterengineer:item/resonance", "pitch": 1.1}
     ],
     "subtitle": "subtitles.masterengineer.item.resonance_fork.use"
+  },
+
+  "block.allocite.break": {
+    "sounds": [
+      { "name": "masterengineer/block/allocite_block/allocite_break0"},
+      { "name": "masterengineer/block/allocite_block/allocite_break1"},
+      { "name": "masterengineer/block/allocite_block/allocite_break2"},
+      { "name": "masterengineer/block/allocite_block/allocite_break3"},
+      { "name": "masterengineer/block/allocite_block/allocite_break4"},
+      { "name": "masterengineer/block/allocite_block/allocite_break2", "pitch": 0.9 },
+      { "name": "masterengineer/block/allocite_block/allocite_break4", "pitch": 0.9 }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.allocite.place": {
+    "sounds": [
+      { "name": "masterengineer/block/allocite_block/allocite_place0"},
+      { "name": "masterengineer/block/allocite_block/allocite_place1"},
+      { "name": "masterengineer/block/allocite_block/allocite_place2"},
+      { "name": "masterengineer/block/allocite_block/allocite_place3"},
+      { "name": "masterengineer/block/allocite_block/allocite_place3", "pitch": 0.9 }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.allocite.step": {
+    "sounds": [
+      { "name": "masterengineer/block/allocite_block/allocite_step0"},
+      { "name": "masterengineer/block/allocite_block/allocite_step1"},
+      { "name": "masterengineer/block/allocite_block/allocite_step2"},
+      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "block.allocite.fall": {
+    "sounds": [
+      { "name": "masterengineer/block/allocite_block/allocite_step0"},
+      { "name": "masterengineer/block/allocite_block/allocite_step1"},
+      { "name": "masterengineer/block/allocite_block/allocite_step2"},
+      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+    ]
+  },
+  "block.allocite.hit": {
+    "sounds": [
+      { "name": "masterengineer/block/allocite_block/allocite_step1"},
+      { "name": "masterengineer/block/allocite_block/allocite_step2"},
+      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+
+
+
+  "block.allocite_plating.break": {
+    "sounds": [
+      { "name": "block/allocite_metal/break1", "volume": 0.95 },
+      { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break2", "volume": 0.95 },
+      { "name": "block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break3", "volume": 0.95 },
+      { "name": "block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break4", "volume": 0.95 },
+      { "name": "block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+  "block.allocite_plating.fall": {
+    "sounds": [
+      "block/allocite_metal/step1",
+      "block/allocite_metal/step2",
+      "block/allocite_metal/step3",
+      "block/allocite_metal/step4",
+      "block/allocite_metal/step5",
+      "block/allocite_metal/step6"
+    ]
+  },
+  "block.allocite_plating.hit": {
+    "sounds": [
+      "block/allocite_metal/step1",
+      "block/allocite_metal/step2",
+      "block/allocite_metal/step3",
+      "block/allocite_metal/step4",
+      "block/allocite_metal/step5",
+      "block/allocite_metal/step6"
+    ],
+    "subtitle": "subtitles.block.generic.hit"
+  },
+  "block.allocite_plating.place": {
+    "sounds": [
+      { "name": "block/allocite_metal/break1", "volume": 0.95 },
+      { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break2", "volume": 0.95 },
+      { "name": "block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break3", "volume": 0.95 },
+      { "name": "block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
+      { "name": "block/allocite_metal/break4", "volume": 0.95 },
+      { "name": "block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.allocite_plating.step": {
+    "sounds": [
+      "block/allocite_metal/step1",
+      "block/allocite_metal/step2",
+      "block/allocite_metal/step3",
+      "block/allocite_metal/step4",
+      "block/allocite_metal/step5",
+      "block/allocite_metal/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
   }
 }

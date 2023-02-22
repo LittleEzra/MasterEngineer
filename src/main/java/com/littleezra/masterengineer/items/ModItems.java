@@ -22,6 +22,9 @@ public class ModItems {
     public static final RegistryObject<Item> FEATHER_DUSTER = ITEMS.register("feather_duster",
             () -> new FeatherDusterItem(new Item.Properties()));
 
+    public static final RegistryObject<Item> ALLOCITE_CRYSTAL = ITEMS.register("allocite_crystal",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
