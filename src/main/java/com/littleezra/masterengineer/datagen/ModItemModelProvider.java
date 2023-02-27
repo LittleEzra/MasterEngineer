@@ -55,7 +55,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FEATHER_DUSTER.get());
 
         blockItem(ModBlocks.ALLOCITE_BLOCK.get());
+        blockItem(ModBlocks.ALLOCITE_PLATING.get());
         basicItem(ModItems.ALLOCITE_CRYSTAL.get());
+
+        spawnEggItem(ModItems.SOMBROCK_SPAWN_EGG.get());
     }
 
     public String blockName(Block block){

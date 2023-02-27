@@ -28,6 +28,19 @@ public class ModSounds {
             ModSounds.ALLOCITE_HIT,
             ModSounds.ALLOCITE_FALL
     );
+    public static final RegistryObject<SoundEvent> ALLOCITE_METAL_BREAK = registerSoundEvent("block.allocite_metal.break");
+    public static final RegistryObject<SoundEvent> ALLOCITE_METAL_PLACE = registerSoundEvent("block.allocite_metal.place");
+    public static final RegistryObject<SoundEvent> ALLOCITE_METAL_STEP = registerSoundEvent("block.allocite_metal.step");
+    public static final RegistryObject<SoundEvent> ALLOCITE_METAL_FALL = registerSoundEvent("block.allocite_metal.fall");
+    public static final RegistryObject<SoundEvent> ALLOCITE_METAL_HIT = registerSoundEvent("block.allocite_metal.hit");
+
+    public static final ForgeSoundType ALLOCITE_METAL = new ForgeSoundType(1f, 1f,
+            ModSounds.ALLOCITE_METAL_BREAK,
+            ModSounds.ALLOCITE_METAL_STEP,
+            ModSounds.ALLOCITE_METAL_PLACE,
+            ModSounds.ALLOCITE_METAL_HIT,
+            ModSounds.ALLOCITE_METAL_FALL
+    );
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name)
     {

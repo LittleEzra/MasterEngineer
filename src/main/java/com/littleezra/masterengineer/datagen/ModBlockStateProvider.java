@@ -53,6 +53,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         wallBlockInventory((WallBlock) ModBlocks.SMALL_DUST_BRICK_WALL.get(), new ResourceLocation(MasterEngineer.MOD_ID, "block/small_dust_bricks"));
 
         simpleBlock(ModBlocks.ALLOCITE_BLOCK.get());
+        simpleBlock(ModBlocks.ALLOCITE_PLATING.get());
     }
 
     private ResourceLocation key(Block block) {

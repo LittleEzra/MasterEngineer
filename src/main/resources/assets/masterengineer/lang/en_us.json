@@ -18,27 +18,26 @@
   "block.masterengineer.black_frame": "Black Frame",
 
   "block.masterengineer.chiseled_dust_bricks": "Chiseled Dust Bricks",
-
   "block.masterengineer.dust_bricks": "Dust Bricks",
   "block.masterengineer.dust_brick_stairs": "Dust Brick Stairs",
   "block.masterengineer.dust_brick_slab": "Dust Brick Slab",
   "block.masterengineer.dust_brick_wall": "Dust Brick Wall",
-
   "block.masterengineer.small_dust_bricks": "Small Dust Bricks",
   "block.masterengineer.small_dust_brick_stairs": "Small Dust Brick Stairs",
   "block.masterengineer.small_dust_brick_slab": "Small Dust Brick Slab",
   "block.masterengineer.small_dust_brick_wall": "Small Dust Brick Wall",
   "block.masterengineer.dust": "Dust",
   "block.masterengineer.dust_block": "Dust Block",
-
   "block.masterengineer.allocite_block": "Allocite Block",
   "block.masterengineer.allocite_plating": "Allocite Plating",
+  "block.masterengineer.ghost_block": "Ghost Block",
 
   "item.masterengineer.allocite_crystal": "Allocite Crystal",
-
   "item.masterengineer.resonance_fork": "Resonance Fork",
   "item.masterengineer.feather_duster": "Feather Duster",
   "item.masterengineer.mark_arrow": "Mark Arrow",
+
+  "item.masterengineer.sombrock_spawn_egg": "Sombrock Spawn Egg",
 
   "subtitles.masterengineer.item.resonance_fork.use": "Resonance Fork Resonates"
 }

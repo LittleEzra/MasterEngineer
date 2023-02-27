@@ -2,6 +2,7 @@ package com.littleezra.masterengineer.items.custom;
 
 import com.littleezra.masterengineer.MasterEngineer;
 import com.littleezra.masterengineer.entity.custom.MarkArrow;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.projectile.SpectralArrow;
@@ -26,5 +27,11 @@ public class MarkArrowItem extends ArrowItem implements DyeableLeatherItem {
         color.y = decoded.getGreen() / 255f;
         color.z = decoded.getBlue() / 255f;
         return new MarkArrow(pLevel, pShooter, color);
+    }
+
+    @Override
+    public int getColor(ItemStack pStack) {
+        CompoundTag compoundtag = pStack.getTagElement("display");
+        return compoundtag != null && compoundtag.contains("color", 99) ? compoundtag.getInt("color") : MasterEngineer.getIntColor("#ffffff");
     }
 }

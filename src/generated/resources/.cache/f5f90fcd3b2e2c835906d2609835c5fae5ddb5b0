@@ -1,5 +1,6 @@
-// 1.19.3	2023-02-21T19:14:26.2271695	Block States: masterengineer
+// 1.19.3	2023-02-22T20:04:10.9380893	Block States: masterengineer
 10d64f8902f281a5ad584d3f6d7fdce0f667ae60 assets/masterengineer/blockstates/allocite_block.json
+937e606d0d6e836ff07f826579b7a02580628b62 assets/masterengineer/blockstates/allocite_plating.json
 4c7baf4a69fc48ab4defeb2a3a295f88e9f1cbc8 assets/masterengineer/blockstates/black_frame.json
 6fb7c65dc08c1390e06c4f208551dd22c5e6485a assets/masterengineer/blockstates/blue_frame.json
 a4347589ca70d5cff31d7168d16213aa36ae43e1 assets/masterengineer/blockstates/brown_frame.json
@@ -25,6 +26,7 @@ ec4b5f71eac76a20e083b72eb612afea48fd0b22 assets/masterengineer/blockstates/pink_
 7299a13c7da459614ef3ed43a351d7bc586d7829 assets/masterengineer/blockstates/wooden_frame.json
 da35ac113fa2fd85d7a8a134fd602f33d04b8d05 assets/masterengineer/blockstates/yellow_frame.json
 91e442becf8cbf96f9a8d74e2abf23b045661997 assets/masterengineer/models/block/allocite_block.json
+0c6da24e726f1a01d59fb4de35a3f9bef4f04250 assets/masterengineer/models/block/allocite_plating.json
 820568389ba7ed09a011b16fa8f6b06e831858c3 assets/masterengineer/models/block/black_frame.json
 f403d3fe7a771b712957eca4d2b80fede757f27b assets/masterengineer/models/block/blue_frame.json
 96bfc0128c8ffea171b5f483f2399ce16f74c57a assets/masterengineer/models/block/brown_frame.json

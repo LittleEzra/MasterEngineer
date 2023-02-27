@@ -62,7 +62,7 @@
 
 
 
-  "block.allocite_plating.break": {
+  "block.allocite_metal.break": {
     "sounds": [
       { "name": "block/allocite_metal/break1", "volume": 0.95 },
       { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
@@ -75,7 +75,7 @@
     ],
     "subtitle": "subtitles.block.generic.break"
   },
-  "block.allocite_plating.fall": {
+  "block.allocite_metal.fall": {
     "sounds": [
       "block/allocite_metal/step1",
       "block/allocite_metal/step2",
@@ -85,7 +85,7 @@
       "block/allocite_metal/step6"
     ]
   },
-  "block.allocite_plating.hit": {
+  "block.allocite_metal.hit": {
     "sounds": [
       "block/allocite_metal/step1",
       "block/allocite_metal/step2",
@@ -96,7 +96,7 @@
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
-  "block.allocite_plating.place": {
+  "block.allocite_metal.place": {
     "sounds": [
       { "name": "block/allocite_metal/break1", "volume": 0.95 },
       { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
@@ -109,7 +109,7 @@
     ],
     "subtitle": "subtitles.block.generic.place"
   },
-  "block.allocite_plating.step": {
+  "block.allocite_metal.step": {
     "sounds": [
       "block/allocite_metal/step1",
       "block/allocite_metal/step2",

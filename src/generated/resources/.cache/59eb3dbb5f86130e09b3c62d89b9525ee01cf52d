@@ -1,5 +1,6 @@
-// 1.19.3	2023-02-21T19:07:49.0403514	Loot Tables
+// 1.19.3	2023-02-22T19:54:41.8523065	Loot Tables
 916b15f7e7e19ed14dabb2eff1c95af6b85f719a data/masterengineer/loot_tables/blocks/allocite_block.json
+b24c27bc0a3cbd78f558e3621282b65acfa6f902 data/masterengineer/loot_tables/blocks/allocite_plating.json
 27347c4f287c5ccc6c860e3cf2f3d8e50008ac0b data/masterengineer/loot_tables/blocks/black_frame.json
 415e47a7c5e8674c805cecd548ecb9ced4e6d65a data/masterengineer/loot_tables/blocks/blue_frame.json
 aeadfe35b1b8b9f6b921492db7e6e8c19e3233a7 data/masterengineer/loot_tables/blocks/brown_frame.json

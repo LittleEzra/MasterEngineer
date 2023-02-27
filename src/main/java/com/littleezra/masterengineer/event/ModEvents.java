@@ -2,15 +2,22 @@ package com.littleezra.masterengineer.event;
 
 import com.littleezra.masterengineer.MasterEngineer;
 import com.littleezra.masterengineer.capabilities.MarkHandlerProvider;
+import com.littleezra.masterengineer.entity.ModEntityTypes;
+import com.littleezra.masterengineer.entity.custom.Sombrock;
 import com.littleezra.masterengineer.particle.ModParticles;
 import com.littleezra.masterengineer.particle.custom.ColorParticleOptions;
+import com.littleezra.masterengineer.util.ModTags;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
+import net.minecraftforge.event.entity.EntityTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -49,14 +56,29 @@ public class ModEvents {
         public static void onLivingTick(LivingEvent.LivingTickEvent event){
             LivingEntity entity = event.getEntity();
             entity.getCapability(MarkHandlerProvider.MARK_HANDLER).ifPresent(markHandler -> {
-               if (markHandler.getTickDuration() > 0){
-                   MasterEngineer.printDebug(markHandler.getColor());
-                   entity.level.addParticle(new ColorParticleOptions(ModParticles.MARK.get(), markHandler.getColor()),
-                           entity.position().x, entity.position().y, entity.position().z,
-                           0d, 0d, 0d);
+               if (!entity.level.isClientSide && markHandler.getTickDuration() > 0){
+                   ((ServerLevel)entity.level).sendParticles(new ColorParticleOptions(ModParticles.MARK.get(), markHandler.getColor()),
+                           entity.position().x, entity.position().y, entity.position().z, 1,
+                           0d, 0d, 0d, 0d);
                    markHandler.tick();
                }
             });
+            if (entity instanceof ServerPlayer serverPlayer){
+                serverPlayer.level.getEntities(serverPlayer, serverPlayer.getBoundingBox().inflate(16)).forEach(nearby -> {
+                    MasterEngineer.NEAR_ENTITY_TRIGGER.trigger(serverPlayer, nearby);
+                });
+            }
+        }
+
+        public static void onEntityTeleport(EntityTeleportEvent.EnderEntity event){
+            LivingEntity entity = event.getEntityLiving();
+            BlockPos pos = new BlockPos(
+                    Math.round(event.getTargetX()),
+                    Math.round(event.getTargetY() - 1),
+                    Math.round(event.getTargetZ()));
+            if (entity.level.getBlockState(pos).is(ModTags.Blocks.NO_TELEPORT)){
+                event.setCanceled(true);
+            }
         }
     }
 
@@ -66,7 +88,7 @@ public class ModEvents {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event)
         {
-
+            event.put(ModEntityTypes.SOMBROCK.get(), Sombrock.createAttributes());
         }
     }
 }

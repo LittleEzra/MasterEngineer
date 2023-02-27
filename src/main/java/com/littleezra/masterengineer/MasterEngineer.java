@@ -1,13 +1,16 @@
 package com.littleezra.masterengineer;
 
+import com.littleezra.masterengineer.advancement.criteria.NearEntityTrigger;
 import com.littleezra.masterengineer.blocks.ModBlocks;
 import com.littleezra.masterengineer.effect.ModMobEffects;
 import com.littleezra.masterengineer.entity.ModEntityTypes;
 import com.littleezra.masterengineer.entity.client.MarkArrowRenderer;
+import com.littleezra.masterengineer.entity.client.SombrockRenderer;
 import com.littleezra.masterengineer.items.ModItems;
 import com.littleezra.masterengineer.particle.ModParticles;
 import com.littleezra.masterengineer.sound.ModSounds;
 import com.mojang.logging.LogUtils;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
@@ -29,6 +32,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.joml.Vector3f;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 import javax.annotation.Nullable;
 import java.awt.*;
@@ -40,6 +44,8 @@ public class MasterEngineer
 {
     public static final String MOD_ID = "masterengineer";
     private static final Logger LOGGER = LogUtils.getLogger();
+
+    public static NearEntityTrigger NEAR_ENTITY_TRIGGER = null;
 
     public MasterEngineer()
     {
@@ -57,13 +63,17 @@ public class MasterEngineer
 
         MinecraftForge.EVENT_BUS.register(this);
 
+        GeckoLib.initialize();
+
         modEventBus.addListener(this::addCreative);
         modEventBus.addListener(this::registerItemColors);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        
+        event.enqueueWork(() -> {
+            NEAR_ENTITY_TRIGGER = CriteriaTriggers.register(new NearEntityTrigger());
+        });
     }
 
     public static void printDebug(String line){
@@ -121,10 +131,11 @@ public class MasterEngineer
 
     public void addCreative(CreativeModeTabEvent.BuildContents event){
         if (event.getTab() == CreativeModeTabs.SPAWN_EGGS){{
-
+            event.accept(ModItems.SOMBROCK_SPAWN_EGG);
         }}
         if (event.getTab() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModBlocks.DUST.get());
+            event.accept(ModBlocks.DUST);
+            event.accept(ModItems.ALLOCITE_CRYSTAL);
         }
         if (event.getTab() == CreativeModeTabs.FOOD_AND_DRINKS){
 
@@ -161,7 +172,7 @@ public class MasterEngineer
             event.accept(ModBlocks.PINK_FRAME);
         }
         if (event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
-
+            event.accept(ModBlocks.ALLOCITE_BLOCK);
         }
         if (event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.WOODEN_FRAME);
@@ -175,13 +186,15 @@ public class MasterEngineer
             event.accept(ModBlocks.SMALL_DUST_BRICK_STAIRS);
             event.accept(ModBlocks.SMALL_DUST_BRICK_SLAB);
             event.accept(ModBlocks.SMALL_DUST_BRICK_WALL);
-            event.accept(ModBlocks.DUST_BLOCK.get());
+            event.accept(ModBlocks.DUST_BLOCK);
+            event.accept(ModBlocks.ALLOCITE_PLATING);
+            event.accept(ModBlocks.GHOST_BLOCK);
         }
         if (event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS){
 
         }
         if (event.getTab() == CreativeModeTabs.FUNCTIONAL_BLOCKS){
-
+            event.accept(ModBlocks.GHOST_BLOCK);
         }
     }
     public void registerItemColors(RegisterColorHandlersEvent.Item event){
@@ -196,6 +209,7 @@ public class MasterEngineer
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntityTypes.MARK_ARROW.get(), MarkArrowRenderer::new);
+            EntityRenderers.register(ModEntityTypes.SOMBROCK.get(), SombrockRenderer::new);
         }
     }
 }

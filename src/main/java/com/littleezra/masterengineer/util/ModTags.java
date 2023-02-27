@@ -11,6 +11,7 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> BUILDING_FRAMES = tag("building_frames");
         public static final TagKey<Block> DUST_COLLECTING_BRICKS = tag("dust_collecting_bricks");
+        public static final TagKey<Block> NO_TELEPORT = tag("no_teleport");
 
 
         private static TagKey<Block> tag(String name) {
