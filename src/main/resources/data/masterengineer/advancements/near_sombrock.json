@@ -9,7 +9,7 @@
   "parent": "minecraft:adventure/root",
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:tame_animal",
+      "trigger": "masterengineer:near_entity",
       "conditions": {
         "player": [
           {
@@ -28,7 +28,8 @@
               "type": "masterengineer:sombrock"
             }
           }
-        ]
+        ],
+        "distance": 4
       }
     }
   }

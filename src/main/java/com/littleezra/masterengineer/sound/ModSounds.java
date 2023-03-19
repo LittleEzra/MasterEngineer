@@ -42,6 +42,9 @@ public class ModSounds {
             ModSounds.ALLOCITE_METAL_FALL
     );
 
+    public static final RegistryObject<SoundEvent> SUMMON_STAFF_USE = registerSoundEvent("item.summon_staff.use");
+    public static final RegistryObject<SoundEvent> SUMMON_STAFF_FAIL = registerSoundEvent("item.summon_staff.fail");
+
     private static RegistryObject<SoundEvent> registerSoundEvent(String name)
     {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MasterEngineer.MOD_ID, name)));

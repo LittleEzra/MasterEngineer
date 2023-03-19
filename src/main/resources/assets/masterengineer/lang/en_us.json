@@ -36,8 +36,20 @@
   "item.masterengineer.resonance_fork": "Resonance Fork",
   "item.masterengineer.feather_duster": "Feather Duster",
   "item.masterengineer.mark_arrow": "Mark Arrow",
+  "item.masterengineer.staff_of_gaiety": "Staff of Gaiety",
+  "item.masterengineer.staff_of_fury": "Staff of Fury",
+  "item.masterengineer.staff_of_sorrow": "Staff of Sorrow",
 
   "item.masterengineer.sombrock_spawn_egg": "Sombrock Spawn Egg",
 
-  "subtitles.masterengineer.item.resonance_fork.use": "Resonance Fork Resonates"
+  "entity.masterengineer.mark_arrow": "Mark Arrow",
+  "entity.masterengineer.sombrock": "Sombrock",
+  "entity.masterengineer.happy_fervour": "Happy Fervour",
+
+  "tooltip.masterengineer.summon_cost.singular": "Summon Cost: %s Level",
+  "tooltip.masterengineer.summon_cost.plural": "Summon Cost: %s Levels",
+
+  "subtitles.masterengineer.item.resonance_fork.use": "Resonance Fork Resonates",
+  "subtitles.masterengineer.item.summon_staff.use": "Creature Summoned",
+  "subtitles.masterengineer.item.summon_staff.fail": "Creature Summon Failed"
 }

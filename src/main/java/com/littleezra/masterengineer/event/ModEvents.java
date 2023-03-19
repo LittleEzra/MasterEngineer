@@ -3,6 +3,8 @@ package com.littleezra.masterengineer.event;
 import com.littleezra.masterengineer.MasterEngineer;
 import com.littleezra.masterengineer.capabilities.MarkHandlerProvider;
 import com.littleezra.masterengineer.entity.ModEntityTypes;
+import com.littleezra.masterengineer.entity.custom.AngryFervour;
+import com.littleezra.masterengineer.entity.custom.HappyFervour;
 import com.littleezra.masterengineer.entity.custom.Sombrock;
 import com.littleezra.masterengineer.particle.ModParticles;
 import com.littleezra.masterengineer.particle.custom.ColorParticleOptions;
@@ -13,7 +15,6 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -74,9 +75,9 @@ public class ModEvents {
             LivingEntity entity = event.getEntityLiving();
             BlockPos pos = new BlockPos(
                     Math.round(event.getTargetX()),
-                    Math.round(event.getTargetY() - 1),
+                    Math.round(event.getTargetY()),
                     Math.round(event.getTargetZ()));
-            if (entity.level.getBlockState(pos).is(ModTags.Blocks.NO_TELEPORT)){
+            if (entity.level.getBlockState(pos.below()).is(ModTags.Blocks.NO_TELEPORT) || entity.level.getBlockState(pos).is(ModTags.Blocks.NO_TELEPORT)){
                 event.setCanceled(true);
             }
         }
@@ -89,6 +90,8 @@ public class ModEvents {
         public static void entityAttributeEvent(EntityAttributeCreationEvent event)
         {
             event.put(ModEntityTypes.SOMBROCK.get(), Sombrock.createAttributes());
+            event.put(ModEntityTypes.HAPPY_FERVOUR.get(), HappyFervour.createAttributes());
+            event.put(ModEntityTypes.ANGRY_FERVOUR.get(), AngryFervour.createAttributes());
         }
     }
 }

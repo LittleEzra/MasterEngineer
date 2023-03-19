@@ -72,6 +72,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.dropSelf(ModBlocks.ALLOCITE_BLOCK.get());
         this.dropSelf(ModBlocks.ALLOCITE_PLATING.get());
+        this.dropSelf(ModBlocks.GHOST_BLOCK.get());
     }
 
     @Override

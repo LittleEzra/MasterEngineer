@@ -29,7 +29,7 @@ public class NearEntityTrigger extends SimpleCriterionTrigger<NearEntityTrigger.
 
     public void trigger(ServerPlayer pPlayer, Entity pEntity) {
         LootContext lootcontext = EntityPredicate.createContext(pPlayer, pEntity);
-        this.trigger(pPlayer, (triggerInstance) -> triggerInstance.matches(lootcontext) && pPlayer.distanceToSqr(pEntity) <= triggerInstance.distance);
+        this.trigger(pPlayer, (triggerInstance) -> triggerInstance.matches(lootcontext) && pPlayer.distanceToSqr(pEntity) <= triggerInstance.distance * triggerInstance.distance);
     }
 
     public static class TriggerInstance extends AbstractCriterionTriggerInstance {

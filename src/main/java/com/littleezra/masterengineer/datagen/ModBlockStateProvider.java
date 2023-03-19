@@ -54,6 +54,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         simpleBlock(ModBlocks.ALLOCITE_BLOCK.get());
         simpleBlock(ModBlocks.ALLOCITE_PLATING.get());
+        simpleBlockWithRenderType(ModBlocks.GHOST_BLOCK.get(), "translucent");
     }
 
     private ResourceLocation key(Block block) {

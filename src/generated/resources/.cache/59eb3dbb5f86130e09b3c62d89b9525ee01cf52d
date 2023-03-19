@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-22T19:54:41.8523065	Loot Tables
+// 1.19.3	2023-02-27T18:47:11.6005444	Loot Tables
 916b15f7e7e19ed14dabb2eff1c95af6b85f719a data/masterengineer/loot_tables/blocks/allocite_block.json
 b24c27bc0a3cbd78f558e3621282b65acfa6f902 data/masterengineer/loot_tables/blocks/allocite_plating.json
 27347c4f287c5ccc6c860e3cf2f3d8e50008ac0b data/masterengineer/loot_tables/blocks/black_frame.json
@@ -12,6 +12,7 @@ a713c95f49aae32c3e34e915def492d7fef4af09 data/masterengineer/loot_tables/blocks/
 d6192dd0eba0888a6c2d42b88a5b632048193f5b data/masterengineer/loot_tables/blocks/dust_brick_slab.json
 f799e305f9153485838abc7d94aa22b92fed86fc data/masterengineer/loot_tables/blocks/dust_brick_stairs.json
 c9152220cd171518191c275009e87f3d5fec5e7a data/masterengineer/loot_tables/blocks/dust_brick_wall.json
+7cd5cefb02b67704c42c09a416f48eb0b00a6297 data/masterengineer/loot_tables/blocks/ghost_block.json
 23d15cbac92053a0c920635604cf6d483b7d2ccb data/masterengineer/loot_tables/blocks/gray_frame.json
 662eee8c88c59561cd91f6345a3beec0f0df827b data/masterengineer/loot_tables/blocks/green_frame.json
 7a1c510e8b25b3254123904571b59fea5c6ae820 data/masterengineer/loot_tables/blocks/light_blue_frame.json

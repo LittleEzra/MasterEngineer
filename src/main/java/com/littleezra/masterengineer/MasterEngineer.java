@@ -4,6 +4,8 @@ import com.littleezra.masterengineer.advancement.criteria.NearEntityTrigger;
 import com.littleezra.masterengineer.blocks.ModBlocks;
 import com.littleezra.masterengineer.effect.ModMobEffects;
 import com.littleezra.masterengineer.entity.ModEntityTypes;
+import com.littleezra.masterengineer.entity.client.AngryFervourRenderer;
+import com.littleezra.masterengineer.entity.client.HappyFervourRenderer;
 import com.littleezra.masterengineer.entity.client.MarkArrowRenderer;
 import com.littleezra.masterengineer.entity.client.SombrockRenderer;
 import com.littleezra.masterengineer.items.ModItems;
@@ -16,9 +18,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.DyeableLeatherItem;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,14 +28,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.joml.Vector3f;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 
 import javax.annotation.Nullable;
 import java.awt.*;
-import java.util.Vector;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MasterEngineer.MOD_ID)
@@ -149,6 +146,9 @@ public class MasterEngineer
         }
         if (event.getTab() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.MARK_ARROW);
+            event.accept(ModItems.GAIETY_STAFF);
+            event.accept(ModItems.FURY_STAFF);
+            event.accept(ModItems.SORROW_STAFF);
         }
 
 // Blocks!
@@ -210,6 +210,8 @@ public class MasterEngineer
         {
             EntityRenderers.register(ModEntityTypes.MARK_ARROW.get(), MarkArrowRenderer::new);
             EntityRenderers.register(ModEntityTypes.SOMBROCK.get(), SombrockRenderer::new);
+            EntityRenderers.register(ModEntityTypes.HAPPY_FERVOUR.get(), HappyFervourRenderer::new);
+            EntityRenderers.register(ModEntityTypes.ANGRY_FERVOUR.get(), AngryFervourRenderer::new);
         }
     }
 }

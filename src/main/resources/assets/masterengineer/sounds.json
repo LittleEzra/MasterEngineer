@@ -11,51 +11,51 @@
 
   "block.allocite.break": {
     "sounds": [
-      { "name": "masterengineer/block/allocite_block/allocite_break0"},
-      { "name": "masterengineer/block/allocite_block/allocite_break1"},
-      { "name": "masterengineer/block/allocite_block/allocite_break2"},
-      { "name": "masterengineer/block/allocite_block/allocite_break3"},
-      { "name": "masterengineer/block/allocite_block/allocite_break4"},
-      { "name": "masterengineer/block/allocite_block/allocite_break2", "pitch": 0.9 },
-      { "name": "masterengineer/block/allocite_block/allocite_break4", "pitch": 0.9 }
+      { "name": "masterengineer:block/allocite_block/allocite_break0"},
+      { "name": "masterengineer:block/allocite_block/allocite_break1"},
+      { "name": "masterengineer:block/allocite_block/allocite_break2"},
+      { "name": "masterengineer:block/allocite_block/allocite_break3"},
+      { "name": "masterengineer:block/allocite_block/allocite_break4"},
+      { "name": "masterengineer:block/allocite_block/allocite_break2", "pitch": 0.9 },
+      { "name": "masterengineer:block/allocite_block/allocite_break4", "pitch": 0.9 }
     ],
     "subtitle": "subtitles.block.generic.break"
   },
   "block.allocite.place": {
     "sounds": [
-      { "name": "masterengineer/block/allocite_block/allocite_place0"},
-      { "name": "masterengineer/block/allocite_block/allocite_place1"},
-      { "name": "masterengineer/block/allocite_block/allocite_place2"},
-      { "name": "masterengineer/block/allocite_block/allocite_place3"},
-      { "name": "masterengineer/block/allocite_block/allocite_place3", "pitch": 0.9 }
+      { "name": "masterengineer:block/allocite_block/allocite_place0"},
+      { "name": "masterengineer:block/allocite_block/allocite_place1"},
+      { "name": "masterengineer:block/allocite_block/allocite_place2"},
+      { "name": "masterengineer:block/allocite_block/allocite_place3"},
+      { "name": "masterengineer:block/allocite_block/allocite_place3", "pitch": 0.9 }
     ],
     "subtitle": "subtitles.block.generic.place"
   },
   "block.allocite.step": {
     "sounds": [
-      { "name": "masterengineer/block/allocite_block/allocite_step0"},
-      { "name": "masterengineer/block/allocite_block/allocite_step1"},
-      { "name": "masterengineer/block/allocite_block/allocite_step2"},
-      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
-      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+      { "name": "masterengineer:block/allocite_block/allocite_step0"},
+      { "name": "masterengineer:block/allocite_block/allocite_step1"},
+      { "name": "masterengineer:block/allocite_block/allocite_step2"},
+      { "name": "masterengineer:block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer:block/allocite_block/allocite_step2", "pitch": 0.9 }
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
   "block.allocite.fall": {
     "sounds": [
-      { "name": "masterengineer/block/allocite_block/allocite_step0"},
-      { "name": "masterengineer/block/allocite_block/allocite_step1"},
-      { "name": "masterengineer/block/allocite_block/allocite_step2"},
-      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
-      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+      { "name": "masterengineer:block/allocite_block/allocite_step0"},
+      { "name": "masterengineer:block/allocite_block/allocite_step1"},
+      { "name": "masterengineer:block/allocite_block/allocite_step2"},
+      { "name": "masterengineer:block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer:block/allocite_block/allocite_step2", "pitch": 0.9 }
     ]
   },
   "block.allocite.hit": {
     "sounds": [
-      { "name": "masterengineer/block/allocite_block/allocite_step1"},
-      { "name": "masterengineer/block/allocite_block/allocite_step2"},
-      { "name": "masterengineer/block/allocite_block/allocite_step1", "pitch": 0.9 },
-      { "name": "masterengineer/block/allocite_block/allocite_step2", "pitch": 0.9 }
+      { "name": "masterengineer:block/allocite_block/allocite_step1"},
+      { "name": "masterengineer:block/allocite_block/allocite_step2"},
+      { "name": "masterengineer:block/allocite_block/allocite_step1", "pitch": 0.9 },
+      { "name": "masterengineer:block/allocite_block/allocite_step2", "pitch": 0.9 }
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
@@ -64,60 +64,80 @@
 
   "block.allocite_metal.break": {
     "sounds": [
-      { "name": "block/allocite_metal/break1", "volume": 0.95 },
-      { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break2", "volume": 0.95 },
-      { "name": "block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break3", "volume": 0.95 },
-      { "name": "block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break4", "volume": 0.95 },
-      { "name": "block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
+      { "name": "masterengineer:block/allocite_metal/break1", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break2", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break3", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break4", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
     ],
     "subtitle": "subtitles.block.generic.break"
   },
   "block.allocite_metal.fall": {
     "sounds": [
-      "block/allocite_metal/step1",
-      "block/allocite_metal/step2",
-      "block/allocite_metal/step3",
-      "block/allocite_metal/step4",
-      "block/allocite_metal/step5",
-      "block/allocite_metal/step6"
+      "masterengineer:block/allocite_metal/step1",
+      "masterengineer:block/allocite_metal/step2",
+      "masterengineer:block/allocite_metal/step3",
+      "masterengineer:block/allocite_metal/step4",
+      "masterengineer:block/allocite_metal/step5",
+      "masterengineer:block/allocite_metal/step6"
     ]
   },
   "block.allocite_metal.hit": {
     "sounds": [
-      "block/allocite_metal/step1",
-      "block/allocite_metal/step2",
-      "block/allocite_metal/step3",
-      "block/allocite_metal/step4",
-      "block/allocite_metal/step5",
-      "block/allocite_metal/step6"
+      "masterengineer:block/allocite_metal/step1",
+      "masterengineer:block/allocite_metal/step2",
+      "masterengineer:block/allocite_metal/step3",
+      "masterengineer:block/allocite_metal/step4",
+      "masterengineer:block/allocite_metal/step5",
+      "masterengineer:block/allocite_metal/step6"
     ],
     "subtitle": "subtitles.block.generic.hit"
   },
   "block.allocite_metal.place": {
     "sounds": [
-      { "name": "block/allocite_metal/break1", "volume": 0.95 },
-      { "name": "block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break2", "volume": 0.95 },
-      { "name": "block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break3", "volume": 0.95 },
-      { "name": "block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
-      { "name": "block/allocite_metal/break4", "volume": 0.95 },
-      { "name": "block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
+      { "name": "masterengineer:block/allocite_metal/break1", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break1", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break2", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break2", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break3", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break3", "pitch": 0.9, "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break4", "volume": 0.95 },
+      { "name": "masterengineer:block/allocite_metal/break4", "pitch": 0.9, "volume": 0.95 }
     ],
     "subtitle": "subtitles.block.generic.place"
   },
   "block.allocite_metal.step": {
     "sounds": [
-      "block/allocite_metal/step1",
-      "block/allocite_metal/step2",
-      "block/allocite_metal/step3",
-      "block/allocite_metal/step4",
-      "block/allocite_metal/step5",
-      "block/allocite_metal/step6"
+      "masterengineer:block/allocite_metal/step1",
+      "masterengineer:block/allocite_metal/step2",
+      "masterengineer:block/allocite_metal/step3",
+      "masterengineer:block/allocite_metal/step4",
+      "masterengineer:block/allocite_metal/step5",
+      "masterengineer:block/allocite_metal/step6"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "item.summon_staff.use": {
+    "sounds": [
+      {"name": "masterengineer:item/summon_staff/summon1"},
+      {"name": "masterengineer:item/summon_staff/summon1", "pitch": 0.9},
+      {"name": "masterengineer:item/summon_staff/summon2"},
+      {"name": "masterengineer:item/summon_staff/summon2", "pitch": 0.95},
+      {"name": "masterengineer:item/summon_staff/summon3"},
+      {"name": "masterengineer:item/summon_staff/summon3", "pitch": 0.9}
+    ],
+    "subtitle": "subtitles.masterengineer.item.summon_staff.use"
+  },
+  "item.summon_staff.fail": {
+    "sounds": [
+      {"name": "masterengineer:item/summon_staff/fail1"},
+      {"name": "masterengineer:item/summon_staff/fail1", "pitch": 0.9},
+      {"name": "masterengineer:item/summon_staff/fail2"},
+      {"name": "masterengineer:item/summon_staff/fail2", "pitch": 0.95}
+    ],
+    "subtitle": "subtitles.masterengineer.item.summon_staff.fail"
   }
 }

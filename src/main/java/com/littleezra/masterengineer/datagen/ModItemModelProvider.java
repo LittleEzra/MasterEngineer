@@ -53,9 +53,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         handheldItem(ModItems.RESONANCE_FORK.get());
         handheldItem(ModItems.FEATHER_DUSTER.get());
+        handheldItem(ModItems.GAIETY_STAFF.get());
+        handheldItem(ModItems.FURY_STAFF.get());
+        handheldItem(ModItems.SORROW_STAFF.get());
 
         blockItem(ModBlocks.ALLOCITE_BLOCK.get());
         blockItem(ModBlocks.ALLOCITE_PLATING.get());
+        blockItem(ModBlocks.GHOST_BLOCK.get());
         basicItem(ModItems.ALLOCITE_CRYSTAL.get());
 
         spawnEggItem(ModItems.SOMBROCK_SPAWN_EGG.get());

@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-22T20:04:10.9380893	Block States: masterengineer
+// 1.19.3	2023-02-27T18:47:11.5985509	Block States: masterengineer
 10d64f8902f281a5ad584d3f6d7fdce0f667ae60 assets/masterengineer/blockstates/allocite_block.json
 937e606d0d6e836ff07f826579b7a02580628b62 assets/masterengineer/blockstates/allocite_plating.json
 4c7baf4a69fc48ab4defeb2a3a295f88e9f1cbc8 assets/masterengineer/blockstates/black_frame.json
@@ -9,6 +9,7 @@ e8fa25775dfe83b4da894486a26c35bf667ac8ac assets/masterengineer/blockstates/cyan_
 f935a17c7d5f8a13bd7b18348005bd8c1fdecb74 assets/masterengineer/blockstates/dust_brick_slab.json
 427c211a913771d9eba7529205ac63ef48594502 assets/masterengineer/blockstates/dust_brick_stairs.json
 be7fee8c11de175643f7c22ca052b50d924acf3b assets/masterengineer/blockstates/dust_brick_wall.json
+3f06d52f96efe30f70286b241cf3ac2e6e1c2498 assets/masterengineer/blockstates/ghost_block.json
 36b68bb60d2205df508d77c2b104ef1c55d3d7b5 assets/masterengineer/blockstates/gray_frame.json
 092f726d8e7ac30a3c9d340ba6ac55619199fa45 assets/masterengineer/blockstates/green_frame.json
 24f15e504cc1d5f2bc0671847415c43d0aeccc37 assets/masterengineer/blockstates/light_blue_frame.json
@@ -41,6 +42,7 @@ ea4cac4d42d250ec533a4f69c996ab1afcdeafd5 assets/masterengineer/models/block/dust
 312ca2972af5f153ec20010493542d9fa30714d1 assets/masterengineer/models/block/dust_brick_wall_post.json
 3d22faf15bdc6c080e87c62908e6b804f26ac106 assets/masterengineer/models/block/dust_brick_wall_side.json
 245d52c405eb2c72eb411c72479d70802438f4bd assets/masterengineer/models/block/dust_brick_wall_side_tall.json
+f72eca699e03002a31a01ed536835873ed2f23f0 assets/masterengineer/models/block/ghost_block.json
 a9f435c7559a0d3a018e5d4072c6513011209281 assets/masterengineer/models/block/gray_frame.json
 240bbd77884f6892e7227575f6767daccdca9d42 assets/masterengineer/models/block/green_frame.json
 68a2860a5d1c12104996dbe1613cd99d3be68bb4 assets/masterengineer/models/block/light_blue_frame.json

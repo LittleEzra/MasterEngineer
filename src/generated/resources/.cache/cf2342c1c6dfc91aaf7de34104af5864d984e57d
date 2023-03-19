@@ -1,4 +1,4 @@
-// 1.19.3	2023-02-24T16:14:30.1420455	Item Models: masterengineer
+// 1.19.3	2023-03-07T16:12:30.3193541	Item Models: masterengineer
 27a24576477ba89fae5a0c3405273b184f680da3 assets/masterengineer/models/item/allocite_block.json
 90e09efdad88b41012b1ae4c53e55dd9abe7d4f6 assets/masterengineer/models/item/allocite_crystal.json
 ba9571725a4125baeae2db77986313b0a6c17db6 assets/masterengineer/models/item/allocite_plating.json
@@ -14,6 +14,7 @@ b22685d9b09692241257415bc6b3ac91c8e54541 assets/masterengineer/models/item/dust.
 967da05dee71d40c719dbe059552be654e32efcd assets/masterengineer/models/item/dust_brick_stairs.json
 3b97ec04e6d7e1dc7f661ad5b39cffc62bff0c66 assets/masterengineer/models/item/dust_brick_wall.json
 0feff9ecc0e20a8376193022a568db4f9913e356 assets/masterengineer/models/item/feather_duster.json
+adb1e4815a780eec3f48073982ec4e4e2adc2668 assets/masterengineer/models/item/ghost_block.json
 a2454260ee3dcd3a37f4bdf1701053133e61dbe4 assets/masterengineer/models/item/gray_frame.json
 9a7641c42ec4ba12c05e9be51340d59663321c91 assets/masterengineer/models/item/green_frame.json
 f69a31c7dc0be2e6fe41e482c09267577e1525f1 assets/masterengineer/models/item/light_blue_frame.json
@@ -30,6 +31,9 @@ afee18053682d5704bc6568e2d4ca645c2aecbba assets/masterengineer/models/item/small
 0ffb4720623eabf7c634f57b3c7b42c3381806a1 assets/masterengineer/models/item/small_dust_brick_stairs.json
 e63a5357edb19f5e20d7525dee5de03b22574ba8 assets/masterengineer/models/item/small_dust_brick_wall.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/masterengineer/models/item/sombrock_spawn_egg.json
+668a30352b327dd1a79b1e46a3b41dc8c6dd7b40 assets/masterengineer/models/item/staff_of_fury.json
+9f0b689781b39f99160162adcb82ddb9fc4198fe assets/masterengineer/models/item/staff_of_gaiety.json
+52b46838119783cb21ca92fd054755e48773d3ad assets/masterengineer/models/item/staff_of_sorrow.json
 76bcda6837374d270a4207d6b92c24ffac581be8 assets/masterengineer/models/item/white_frame.json
 38b1fc8ef150e201771ebacbfc17d01743ec06ce assets/masterengineer/models/item/wooden_frame.json
 19d23163fbeac17fdb3b897935a800393e77859c assets/masterengineer/models/item/yellow_frame.json
