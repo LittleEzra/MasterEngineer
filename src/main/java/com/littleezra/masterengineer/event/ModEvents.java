@@ -2,9 +2,8 @@ package com.littleezra.masterengineer.event;
 
 import com.littleezra.masterengineer.MasterEngineer;
 import com.littleezra.masterengineer.capabilities.MarkHandlerProvider;
+import com.littleezra.masterengineer.capabilities.PassageDataProvider;
 import com.littleezra.masterengineer.entity.ModEntityTypes;
-import com.littleezra.masterengineer.entity.custom.AngryFervour;
-import com.littleezra.masterengineer.entity.custom.HappyFervour;
 import com.littleezra.masterengineer.entity.custom.Sombrock;
 import com.littleezra.masterengineer.particle.ModParticles;
 import com.littleezra.masterengineer.particle.custom.ColorParticleOptions;
@@ -15,18 +14,29 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.storage.LevelData;
 import net.minecraftforge.common.capabilities.RegisterCapabilitiesEvent;
 import net.minecraftforge.event.AttachCapabilitiesEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.event.level.LevelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 public class ModEvents {
     @Mod.EventBusSubscriber(modid = MasterEngineer.MOD_ID)
     public static class ForgeEvents{
+
+        @SubscribeEvent
+        public static void onAttachCapabilitiesLevel(AttachCapabilitiesEvent<Level> event){
+            if (!event.getObject().getCapability(PassageDataProvider.PASSAGE_DATA).isPresent()){
+                event.addCapability(new ResourceLocation(MasterEngineer.MOD_ID, "properties"), new PassageDataProvider());
+            }
+        }
 
         @SubscribeEvent
         public static void onAttachCapabilitiesLiving(AttachCapabilitiesEvent<Entity> event){
@@ -48,10 +58,7 @@ public class ModEvents {
             }
         }
 
-        @SubscribeEvent
-        public static void onRegisterCapabilities(RegisterCapabilitiesEvent event){
-            event.register(MarkHandlerProvider.class);
-        }
+
 
         @SubscribeEvent
         public static void onLivingTick(LivingEvent.LivingTickEvent event){
@@ -81,6 +88,16 @@ public class ModEvents {
                 event.setCanceled(true);
             }
         }
+
+        @SubscribeEvent
+        public static void onLevelLoad(LevelEvent.Load event){
+            LevelAccessor levelAccessor = event.getLevel();
+            LevelData data = levelAccessor.getLevelData();
+        }
+        @SubscribeEvent
+        public static void onLevelSave(LevelEvent.Save event){
+
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MasterEngineer.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -90,8 +107,12 @@ public class ModEvents {
         public static void entityAttributeEvent(EntityAttributeCreationEvent event)
         {
             event.put(ModEntityTypes.SOMBROCK.get(), Sombrock.createAttributes());
-            event.put(ModEntityTypes.HAPPY_FERVOUR.get(), HappyFervour.createAttributes());
-            event.put(ModEntityTypes.ANGRY_FERVOUR.get(), AngryFervour.createAttributes());
+        }
+
+        @SubscribeEvent
+        public static void onRegisterCapabilities(RegisterCapabilitiesEvent event){
+            event.register(MarkHandlerProvider.class);
+            event.register(PassageDataProvider.class);
         }
     }
 }

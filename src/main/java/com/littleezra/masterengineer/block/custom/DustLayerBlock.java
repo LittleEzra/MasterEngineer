@@ -1,6 +1,6 @@
-package com.littleezra.masterengineer.blocks.custom;
+package com.littleezra.masterengineer.block.custom;
 
-import com.littleezra.masterengineer.blocks.ModBlocks;
+import com.littleezra.masterengineer.block.ModBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;

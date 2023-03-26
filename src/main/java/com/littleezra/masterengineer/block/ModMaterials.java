@@ -1,4 +1,4 @@
-package com.littleezra.masterengineer.blocks;
+package com.littleezra.masterengineer.block;
 
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;

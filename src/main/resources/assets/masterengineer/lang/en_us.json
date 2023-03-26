@@ -31,6 +31,7 @@
   "block.masterengineer.allocite_block": "Allocite Block",
   "block.masterengineer.allocite_plating": "Allocite Plating",
   "block.masterengineer.ghost_block": "Ghost Block",
+  "block.masterengineer.passage": "Passage",
 
   "item.masterengineer.allocite_crystal": "Allocite Crystal",
   "item.masterengineer.resonance_fork": "Resonance Fork",
@@ -48,6 +49,8 @@
 
   "tooltip.masterengineer.summon_cost.singular": "Summon Cost: %s Level",
   "tooltip.masterengineer.summon_cost.plural": "Summon Cost: %s Levels",
+
+  "container.masterengineer.passage": "Travel",
 
   "subtitles.masterengineer.item.resonance_fork.use": "Resonance Fork Resonates",
   "subtitles.masterengineer.item.summon_staff.use": "Creature Summoned",

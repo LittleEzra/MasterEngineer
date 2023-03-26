@@ -56,7 +56,6 @@ public class Sombrock extends PathfinderMob implements GeoAnimatable {
         }
         if (!animationState.isCurrentAnimation(SIGH_ANIMATION)){
             this.sighing = false;
-            MasterEngineer.printDebug("Resetting sighing to " + this.isSighing());
         }
         return PlayState.CONTINUE;
     }

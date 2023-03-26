@@ -1,8 +1,8 @@
-package com.littleezra.masterengineer.blocks;
+package com.littleezra.masterengineer.block;
 
 import com.littleezra.masterengineer.MasterEngineer;
-import com.littleezra.masterengineer.blocks.custom.*;
-import com.littleezra.masterengineer.items.ModItems;
+import com.littleezra.masterengineer.block.custom.*;
+import com.littleezra.masterengineer.item.ModItems;
 import com.littleezra.masterengineer.sound.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -95,6 +95,11 @@ public class ModBlocks {
             () -> new AllociteBlock(BlockBehaviour.Properties.of(ModMaterials.ALLOCITE).sound(ModSounds.ALLOCITE_METAL).noOcclusion().strength(1.7F, 400F).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> GHOST_BLOCK = registerBlock("ghost_block",
             () -> new Block(BlockBehaviour.Properties.of(ModMaterials.GHOST).sound(SoundType.GLASS).noOcclusion().strength(1F, 200F).isValidSpawn(ModBlocks::never)));
+
+    public static final RegistryObject<Block> PASSAGE = registerBlock("passage",
+            () -> new PassageBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().sound(SoundType.STONE)
+                    .lightLevel(state -> state.getValue(PassageBlock.ACTIVATED) ? 10 : 0)
+                    .strength(5.0F, 1200F)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

@@ -1,4 +1,4 @@
-package com.littleezra.masterengineer.blocks.custom;
+package com.littleezra.masterengineer.block.custom;
 
 import net.minecraft.world.level.block.Block;
 

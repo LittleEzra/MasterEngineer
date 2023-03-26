@@ -1,14 +1,12 @@
 package com.littleezra.masterengineer.datagen;
 
-import com.littleezra.masterengineer.blocks.ModBlocks;
-import com.littleezra.masterengineer.items.ModItems;
+import com.littleezra.masterengineer.block.ModBlocks;
+import com.littleezra.masterengineer.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.StonecutterRecipe;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;

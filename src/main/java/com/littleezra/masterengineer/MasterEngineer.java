@@ -1,19 +1,23 @@
 package com.littleezra.masterengineer;
 
 import com.littleezra.masterengineer.advancement.criteria.NearEntityTrigger;
-import com.littleezra.masterengineer.blocks.ModBlocks;
+import com.littleezra.masterengineer.block.ModBlockEntities;
+import com.littleezra.masterengineer.block.ModBlocks;
 import com.littleezra.masterengineer.effect.ModMobEffects;
 import com.littleezra.masterengineer.entity.ModEntityTypes;
-import com.littleezra.masterengineer.entity.client.AngryFervourRenderer;
-import com.littleezra.masterengineer.entity.client.HappyFervourRenderer;
 import com.littleezra.masterengineer.entity.client.MarkArrowRenderer;
 import com.littleezra.masterengineer.entity.client.SombrockRenderer;
-import com.littleezra.masterengineer.items.ModItems;
+import com.littleezra.masterengineer.item.ModItems;
+import com.littleezra.masterengineer.networking.ModMessages;
 import com.littleezra.masterengineer.particle.ModParticles;
+import com.littleezra.masterengineer.screen.ModMenuTypes;
+import com.littleezra.masterengineer.screen.PassageScreen;
 import com.littleezra.masterengineer.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -48,13 +52,15 @@ public class MasterEngineer
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
         ModSounds.register(modEventBus);
         ModEntityTypes.register(modEventBus);
         ModMobEffects.register(modEventBus);
         ModParticles.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -69,6 +75,8 @@ public class MasterEngineer
     private void commonSetup(final FMLCommonSetupEvent event)
     {
         event.enqueueWork(() -> {
+            ModMessages.register(); // Must be at the top
+
             NEAR_ENTITY_TRIGGER = CriteriaTriggers.register(new NearEntityTrigger());
         });
     }
@@ -146,9 +154,6 @@ public class MasterEngineer
         }
         if (event.getTab() == CreativeModeTabs.COMBAT){
             event.accept(ModItems.MARK_ARROW);
-            event.accept(ModItems.GAIETY_STAFF);
-            event.accept(ModItems.FURY_STAFF);
-            event.accept(ModItems.SORROW_STAFF);
         }
 
 // Blocks!
@@ -200,6 +205,9 @@ public class MasterEngineer
     public void registerItemColors(RegisterColorHandlersEvent.Item event){
         event.register((itemStack, i) -> i > 0 ? -1 : ((DyeableLeatherItem)itemStack.getItem()).getColor(itemStack), ModItems.MARK_ARROW.get());
     }
+    public static String getBlockPosString(BlockPos pos){
+        return "(" + pos.getX() + ", " + pos.getY() + ", " + pos.getZ() + ")";
+    }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -210,8 +218,8 @@ public class MasterEngineer
         {
             EntityRenderers.register(ModEntityTypes.MARK_ARROW.get(), MarkArrowRenderer::new);
             EntityRenderers.register(ModEntityTypes.SOMBROCK.get(), SombrockRenderer::new);
-            EntityRenderers.register(ModEntityTypes.HAPPY_FERVOUR.get(), HappyFervourRenderer::new);
-            EntityRenderers.register(ModEntityTypes.ANGRY_FERVOUR.get(), AngryFervourRenderer::new);
+
+            MenuScreens.register(ModMenuTypes.PASSAGE_MENU.get(), PassageScreen::new);
         }
     }
 }

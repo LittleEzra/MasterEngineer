@@ -1,8 +1,7 @@
 package com.littleezra.masterengineer.datagen;
 
 import com.littleezra.masterengineer.MasterEngineer;
-import com.littleezra.masterengineer.blocks.ModBlocks;
-import net.minecraft.data.DataGenerator;
+import com.littleezra.masterengineer.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;

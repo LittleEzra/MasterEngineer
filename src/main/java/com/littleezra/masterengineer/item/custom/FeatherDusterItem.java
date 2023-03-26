@@ -1,9 +1,8 @@
-package com.littleezra.masterengineer.items.custom;
+package com.littleezra.masterengineer.item.custom;
 
-import com.littleezra.masterengineer.blocks.ModBlocks;
-import com.littleezra.masterengineer.blocks.custom.DustBrickBlock;
-import com.littleezra.masterengineer.blocks.custom.DustLayerBlock;
-import com.littleezra.masterengineer.util.ModTags;
+import com.littleezra.masterengineer.block.ModBlocks;
+import com.littleezra.masterengineer.block.custom.DustBrickBlock;
+import com.littleezra.masterengineer.block.custom.DustLayerBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
@@ -13,8 +12,6 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.state.BlockState;
 import org.joml.Vector3f;
 
 public class FeatherDusterItem extends Item {

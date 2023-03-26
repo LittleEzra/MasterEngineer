@@ -1,8 +1,6 @@
 package com.littleezra.masterengineer.entity;
 
 import com.littleezra.masterengineer.MasterEngineer;
-import com.littleezra.masterengineer.entity.custom.AngryFervour;
-import com.littleezra.masterengineer.entity.custom.HappyFervour;
 import com.littleezra.masterengineer.entity.custom.MarkArrow;
 import com.littleezra.masterengineer.entity.custom.Sombrock;
 import net.minecraft.resources.ResourceLocation;
@@ -23,13 +21,6 @@ public class ModEntityTypes {
     public static final RegistryObject<EntityType<Sombrock>> SOMBROCK = ENTITY_TYPES.register("sombrock",
             () -> EntityType.Builder.of(Sombrock::new, MobCategory.CREATURE).sized(1f, 2.25f)
                     .build(new ResourceLocation(MasterEngineer.MOD_ID, "sombrock").toString()));
-
-    public static final RegistryObject<EntityType<HappyFervour>> HAPPY_FERVOUR = ENTITY_TYPES.register("happy_fervour",
-            () -> EntityType.Builder.of(HappyFervour::new, MobCategory.CREATURE).sized(0.375F, 0.5F)
-                    .build(new ResourceLocation(MasterEngineer.MOD_ID, "happy_fervour").toString()));
-    public static final RegistryObject<EntityType<AngryFervour>> ANGRY_FERVOUR = ENTITY_TYPES.register("angry_fervour",
-            () -> EntityType.Builder.of(AngryFervour::new, MobCategory.CREATURE).sized(0.375F, 0.5F)
-                    .build(new ResourceLocation(MasterEngineer.MOD_ID, "angry_fervour").toString()));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

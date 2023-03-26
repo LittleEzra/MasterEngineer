@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "activated=false": {
+      "model": "masterengineer:block/passage_deactivated"
+    },
+    "activated=true": {
+      "model": "masterengineer:block/passage_activated"
+    }
+  }
+}
